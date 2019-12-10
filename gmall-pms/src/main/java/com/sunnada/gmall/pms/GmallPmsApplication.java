@@ -1,20 +1,19 @@
-package com.sunnada.gmall.ums;
+package com.sunnada.gmall.pms;
 
 import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-@EnableTransactionManagement
 @EnableDubbo
+@EnableTransactionManagement
+@MapperScan("com.sunnada.gmall.pms.mapper")
 @SpringBootApplication
-@MapperScan("com.sunnada.gmall.ums.mapper")
-public class GmallUmsApplication {
+public class GmallPmsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GmallUmsApplication.class, args);
+		SpringApplication.run(GmallPmsApplication.class, args);
 	}
 
 }

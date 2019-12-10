@@ -1,4 +1,4 @@
-package com.sunnada.gmallpms;
+package com.sunnada.gmall.pms;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
